@@ -3,15 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "bunx --bun next dev",
+    "build": "bunx --bun next build",
+    "start": "bunx --bun next start",
+    "lint": "bunx --bun next lint"
   },
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.2.4"
+    "next": "15.2.4",
+    "clsx": "^2.0.0",
+    "tailwind-merge": "^2.0.0"
   },
   "devDependencies": {
     "typescript": "^5",
@@ -22,6 +24,12 @@
     "tailwindcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.2.4",
-    "@eslint/eslintrc": "^3"
+    "@eslint/eslintrc": "^3",
+    "bun-types": "latest"
+  },
+  "module": "index.ts",
+  "type": "module",
+  "engines": {
+    "bun": ">=1.0.0"
   }
 }
